@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crypto Drops - Explore our app, download from Google Play, and learn about our Privacy Policy, Terms of Service, and more.">
+    <meta name="keywords" content="Crypto Drops, cryptocurrency, airdrops, app, download, privacy policy, terms of service, contact">
+    <title>Crypto Drops</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+</head>
+<body>
+    <div class="parallax">
+        <header>
+            <div class="logo"></div>
+            <div class="header-content">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div>
+                    <h1 class="float-animation">Crypto <span class="highlight">Drops</span></h1>
+                    <p class="app-description float-animation-badge">Discover the latest crypto airdrops effortlessly with Crypto Drops. Stay informed and never miss an opportunity!</p>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.yourapp" target="_blank">
+                    <img src="{{ url_for('static', filename='images/google-play-badge.png') }}" alt="Download from Google Play" class="google-play-badge">
+                </a>
+            </div>
+        </header>
+
+        <section class="content">
+            <h2>Explore the App</h2>
+            <div class="card-container">
+                <div class="card glassmorphism" onclick="openPage('privacy')">
+                    <img src="{{ url_for('static', filename='images/image1.png') }}" alt="Privacy Policy" class="float-image">
+                    <h3>Privacy Policy</h3>
+                    <p>Read about how we protect your data.</p>
+                </div>
+                <div class="card glassmorphism" onclick="openPage('terms')">
+                    <img src="{{ url_for('static', filename='images/image2.png') }}" alt="Terms of Service" class="float-image">
+                    <h3>Terms of Service</h3>
+                    <p>Understand the terms of using our app.</p>
+                </div>
+                <div class="card glassmorphism" onclick="contactUs()">
+                    <img src="{{ url_for('static', filename='images/image3.png') }}" alt="Contact Us" class="float-image">
+                    <h3>Contact Us</h3>
+                    <p>Get in touch, Request feature, Complain bugs, etc.
+                        creativecreationshub@gmail.com </p>
+                </div>
+                    
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Crpto Drops. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
