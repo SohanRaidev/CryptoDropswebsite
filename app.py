@@ -14,5 +14,9 @@ def privacy_policy():
 def terms():
     return render_template('terms-of-service.html')
 
+@app.route('/app-ads.txt')
+def serve_text_file():
+    return send_from_directory('static', 'app-ads.txt')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
